@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Тетрис</string>
+
+    <string name="resume">Продолжить</string>
+    <string name="restart">Начать заново</string>
+
+    <string name="next">Дальше</string>
+    <string name="score">Счёт</string>
+    <string name="level">Уровень</string>
+    <string name="lines">Линии</string>
+    <string name="pause">Пауза</string>
+    <string name="game_over">Игра окончена</string>
+    <string name="new_record">Новый рекорд!</string>
+    <string name="play_again">Играть снова</string>
+    <string name="to_menu">В меню</string>
+    <string name="stats_format">Очки: %1$s\nУровень: %2$d\nЛинии: %3$d\nВремя: %4$s</string>
+    <string name="cd_left">Влево</string>
+    <string name="cd_right">Вправо</string>
+    <string name="cd_rotate">Повернуть</string>
+    <string name="cd_soft_drop">Мягкий сброс</string>
+    <string name="cd_hard_drop">Жёсткий сброс</string>
+    <string name="cd_pause">Пауза</string>
+
+</resources>

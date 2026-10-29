@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tetris</string>
+
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+
+    <string name="next">Next</string>
+    <string name="score">Score</string>
+    <string name="level">Level</string>
+    <string name="lines">Lines</string>
+    <string name="pause">Pause</string>
+    <string name="game_over">Game over</string>
+    <string name="new_record">New record!</string>
+    <string name="play_again">Play again</string>
+    <string name="to_menu">Menu</string>
+    <string name="stats_format">Score: %1$s\nLevel: %2$d\nLines: %3$d\nTime: %4$s</string>
+    <string name="cd_left">Move left</string>
+    <string name="cd_right">Move right</string>
+    <string name="cd_rotate">Rotate</string>
+    <string name="cd_soft_drop">Soft drop</string>
+    <string name="cd_hard_drop">Hard drop</string>
+    <string name="cd_pause">Pause</string>
+
+</resources>
