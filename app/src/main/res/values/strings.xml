@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Tetris</string>
+    <string name="app_name">Тетрис</string>
 
-    <string name="resume">Resume</string>
-    <string name="restart">Restart</string>
+    <string name="play">Играть</string>
+    <string name="resume">Продолжить</string>
+    <string name="records">Рекорды</string>
+    <string name="settings">Настройки</string>
+    <string name="best_score">Лучший результат: %1$s</string>
+    <string name="saved_game_title">Найдена сохранённая партия</string>
+    <string name="saved_game_message">Продолжить прерванную игру или начать заново?</string>
+    <string name="restart">Начать заново</string>
+    <string name="cancel">Отмена</string>
 
-    <string name="next">Next</string>
-    <string name="score">Score</string>
-    <string name="level">Level</string>
-    <string name="lines">Lines</string>
-    <string name="pause">Pause</string>
-    <string name="game_over">Game over</string>
-    <string name="new_record">New record!</string>
-    <string name="play_again">Play again</string>
-    <string name="to_menu">Menu</string>
-    <string name="stats_format">Score: %1$s\nLevel: %2$d\nLines: %3$d\nTime: %4$s</string>
-    <string name="cd_left">Move left</string>
-    <string name="cd_right">Move right</string>
-    <string name="cd_rotate">Rotate</string>
-    <string name="cd_soft_drop">Soft drop</string>
-    <string name="cd_hard_drop">Hard drop</string>
-    <string name="cd_pause">Pause</string>
+    <string name="next">Дальше</string>
+    <string name="score">Счёт</string>
+    <string name="level">Уровень</string>
+    <string name="lines">Линии</string>
+    <string name="pause">Пауза</string>
+    <string name="game_over">Игра окончена</string>
+    <string name="new_record">Новый рекорд!</string>
+    <string name="play_again">Играть снова</string>
+    <string name="to_menu">В меню</string>
+    <string name="stats_format">Очки: %1$s\nУровень: %2$d\nЛинии: %3$d\nВремя: %4$s</string>
+    <string name="cd_left">Влево</string>
+    <string name="cd_right">Вправо</string>
+    <string name="cd_rotate">Повернуть</string>
+    <string name="cd_soft_drop">Мягкий сброс</string>
+    <string name="cd_hard_drop">Жёсткий сброс</string>
+    <string name="cd_pause">Пауза</string>
+    <string name="cd_back">Назад</string>
 
+    <string name="records_title">Рекорды</string>
+    <string name="clear">Очистить</string>
+    <string name="clear_title">Очистить рекорды?</string>
+    <string name="clear_message">Все сохранённые результаты будут удалены.</string>
+    <string name="no_results">Пока нет результатов. Сыграйте первую партию!</string>
+    <string name="col_place">#</string>
+    <string name="col_score">Очки</string>
+    <string name="col_level">Ур.</string>
+    <string name="col_lines">Линий</string>
+    <string name="col_date">Дата</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="group_game">Игра</string>
+    <string name="controls">Схема управления</string>
+    <string name="controls_gestures">Жесты</string>
+    <string name="controls_buttons">Кнопки</string>
+    <string name="group_appearance">Внешний вид</string>
+    <string name="language">Язык</string>
+    <string name="language_ru">Русский</string>
+    <string name="language_en">English</string>
+    <string name="theme">Тема</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="ghost">Призрак фигуры</string>
+    <string name="grid">Сетка</string>
 </resources>

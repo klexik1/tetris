@@ -19,6 +19,7 @@ import com.khalchukov.tetris.data.prefs.ControlScheme
 import com.khalchukov.tetris.databinding.ActivityGameBinding
 import com.khalchukov.tetris.ui.common.Formatters
 import com.khalchukov.tetris.ui.common.factoryOf
+import com.khalchukov.tetris.ui.records.RecordsActivity
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.launch
 
@@ -78,10 +79,9 @@ class GameActivity : AppCompatActivity() {
     }
 
     private fun render(state: GameUiState, settings: AppSettings) {
-        val locale = resources.configuration.locales[0]
         binding.boardView.render(state, settings.grid, settings.ghost)
         binding.nextView.setPiece(state.next)
-        binding.valueScore.text = Formatters.number(state.score, locale)
+        binding.valueScore.text = Formatters.number(state.score)
         binding.valueLevel.text = state.level.toString()
         binding.valueLines.text = state.lines.toString()
 
@@ -94,7 +94,7 @@ class GameActivity : AppCompatActivity() {
 
         when (state.phase) {
             Phase.PAUSED -> showPauseMenu()
-            Phase.GAME_OVER -> showGameOver(state, locale)
+            Phase.GAME_OVER -> showGameOver(state)
             else -> binding.overlay.isGone = true
         }
     }
@@ -104,7 +104,6 @@ class GameActivity : AppCompatActivity() {
         overlayTitle.setText(R.string.pause)
         overlayRecord.isGone = true
         overlayStats.isGone = true
-        btnB.isVisible = true
         btnA.setText(R.string.resume)
         btnA.setOnClickListener { viewModel.resumeGame() }
         btnB.setText(R.string.restart)
@@ -113,21 +112,25 @@ class GameActivity : AppCompatActivity() {
         btnC.setOnClickListener { finish() }
     }
 
-    private fun showGameOver(state: GameUiState, locale: java.util.Locale) = with(binding) {
+    private fun showGameOver(state: GameUiState) = with(binding) {
         overlay.isVisible = true
         overlayTitle.setText(R.string.game_over)
         overlayRecord.isVisible = state.isNewRecord
         overlayStats.isVisible = true
         overlayStats.text = getString(
             R.string.stats_format,
-            Formatters.number(state.score, locale),
+            Formatters.number(state.score),
             state.level,
             state.lines,
             Formatters.duration(state.elapsedSec),
         )
         btnA.setText(R.string.play_again)
         btnA.setOnClickListener { viewModel.restart() }
-        btnB.isGone = true
+        btnB.setText(R.string.records)
+        btnB.setOnClickListener {
+            startActivity(Intent(this@GameActivity, RecordsActivity::class.java))
+            finish()
+        }
         btnC.setText(R.string.to_menu)
         btnC.setOnClickListener { finish() }
     }

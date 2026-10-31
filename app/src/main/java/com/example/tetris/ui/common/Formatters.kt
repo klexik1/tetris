@@ -6,10 +6,12 @@ import java.util.Date
 import java.util.Locale
 
 object Formatters {
-    fun number(value: Int, locale: Locale): String = NumberFormat.getIntegerInstance(locale).format(value)
+    private val locale: Locale = Locale.forLanguageTag("ru-RU")
+
+    fun number(value: Int): String = NumberFormat.getIntegerInstance(locale).format(value)
 
     fun duration(totalSec: Int): String = "%d:%02d".format(totalSec / 60, totalSec % 60)
 
-    fun date(millis: Long, locale: Locale): String =
+    fun date(millis: Long): String =
         SimpleDateFormat("dd.MM.yyyy", locale).format(Date(millis))
 }

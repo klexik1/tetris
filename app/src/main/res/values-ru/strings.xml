@@ -2,8 +2,15 @@
 <resources>
     <string name="app_name">Тетрис</string>
 
+    <string name="play">Играть</string>
     <string name="resume">Продолжить</string>
+    <string name="records">Рекорды</string>
+    <string name="settings">Настройки</string>
+    <string name="best_score">Лучший результат: %1$s</string>
+    <string name="saved_game_title">Найдена сохранённая партия</string>
+    <string name="saved_game_message">Продолжить прерванную игру или начать заново?</string>
     <string name="restart">Начать заново</string>
+    <string name="cancel">Отмена</string>
 
     <string name="next">Дальше</string>
     <string name="score">Счёт</string>
@@ -21,5 +28,27 @@
     <string name="cd_soft_drop">Мягкий сброс</string>
     <string name="cd_hard_drop">Жёсткий сброс</string>
     <string name="cd_pause">Пауза</string>
+    <string name="cd_back">Назад</string>
 
+    <string name="records_title">Рекорды</string>
+    <string name="clear">Очистить</string>
+    <string name="clear_title">Очистить рекорды?</string>
+    <string name="clear_message">Все сохранённые результаты будут удалены.</string>
+    <string name="no_results">Пока нет результатов. Сыграйте первую партию!</string>
+    <string name="col_place">#</string>
+    <string name="col_score">Очки</string>
+    <string name="col_level">Ур.</string>
+    <string name="col_lines">Линий</string>
+    <string name="col_date">Дата</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="group_game">Игра</string>
+    <string name="controls">Схема управления</string>
+    <string name="controls_gestures">Жесты</string>
+    <string name="controls_buttons">Кнопки</string>
+    <string name="ghost">Призрак фигуры</string>
+    <string name="grid">Сетка</string>
+    <string name="about">О приложении</string>
+    <string name="about_version">Версия %1$s</string>
+    <string name="ok">ОК</string>
 </resources>

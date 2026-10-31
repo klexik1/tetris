@@ -58,7 +58,7 @@ class BoardView @JvmOverloads constructor(
         val fieldW = cs * Board.WIDTH
         val fieldH = cs * Board.VISIBLE_HEIGHT
         val left = (width - fieldW) / 2f
-        val top = (height - fieldH) / 2f
+        val top = density
 
         canvas.drawRect(left, top, left + fieldW, top + fieldH, fieldPaint)
 
