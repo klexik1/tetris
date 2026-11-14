@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0D0D0D</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="field">#141414</color>
+    <color name="grid">#2E2E2E</color>
+    <color name="primary">#F2F2F2</color>
+    <color name="on_primary">#0D0D0D</color>
+    <color name="on_surface">#E6E6E6</color>
+    <color name="secondary_text">#9E9E9E</color>
+
+    <color name="flash">#FFFFFF</color>
+    <color name="block_mark">#99000000</color>
+    <color name="overlay_scrim">#E60D0D0D</color>
+
+    <color name="piece_i">#F2F2F2</color>
+    <color name="piece_o">#D9D9D9</color>
+    <color name="piece_t">#BFBFBF</color>
+    <color name="piece_s">#A6A6A6</color>
+    <color name="piece_z">#8C8C8C</color>
+    <color name="piece_j">#737373</color>
+    <color name="piece_l">#595959</color>
+</resources>

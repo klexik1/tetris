@@ -46,6 +46,11 @@
     <string name="controls">Схема управления</string>
     <string name="controls_gestures">Жесты</string>
     <string name="controls_buttons">Кнопки</string>
+    <string name="ghost">Призрак фигуры</string>
+    <string name="grid">Сетка</string>
+    <string name="about">О приложении</string>
+    <string name="about_version">Версия %1$s</string>
+    <string name="ok">ОК</string>
     <string name="group_appearance">Внешний вид</string>
     <string name="language">Язык</string>
     <string name="language_ru">Русский</string>
@@ -53,6 +58,4 @@
     <string name="theme">Тема</string>
     <string name="theme_light">Светлая</string>
     <string name="theme_dark">Тёмная</string>
-    <string name="ghost">Призрак фигуры</string>
-    <string name="grid">Сетка</string>
 </resources>

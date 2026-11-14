@@ -9,8 +9,28 @@ enum class ControlScheme(val key: String) {
     }
 }
 
+enum class AppTheme(val key: String) {
+    LIGHT("light"),
+    DARK("dark");
+
+    companion object {
+        fun fromKey(key: String?): AppTheme = values().firstOrNull { it.key == key } ?: LIGHT
+    }
+}
+
+enum class AppLanguage(val key: String) {
+    RU("ru"),
+    EN("en");
+
+    companion object {
+        fun fromKey(key: String?): AppLanguage = values().firstOrNull { it.key == key } ?: RU
+    }
+}
+
 data class AppSettings(
     val controls: ControlScheme = ControlScheme.BUTTONS,
     val ghost: Boolean = true,
     val grid: Boolean = true,
+    val theme: AppTheme = AppTheme.LIGHT,
+    val language: AppLanguage = AppLanguage.RU,
 )
