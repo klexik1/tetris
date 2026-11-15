@@ -2,9 +2,12 @@ package com.khalchukov.tetris.ui.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.khalchukov.tetris.data.prefs.AppLanguage
 import com.khalchukov.tetris.data.prefs.AppSettings
+import com.khalchukov.tetris.data.prefs.AppTheme
 import com.khalchukov.tetris.data.prefs.ControlScheme
 import com.khalchukov.tetris.di.AppContainer
+import com.khalchukov.tetris.ui.common.Appearance
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
@@ -19,4 +22,14 @@ class SettingsViewModel(private val container: AppContainer) : ViewModel() {
     fun setControls(value: ControlScheme) = viewModelScope.launch { repo.setControls(value) }
     fun setGhost(value: Boolean) = viewModelScope.launch { repo.setGhost(value) }
     fun setGrid(value: Boolean) = viewModelScope.launch { repo.setGrid(value) }
+
+    fun setTheme(value: AppTheme) = viewModelScope.launch {
+        repo.setTheme(value)
+        Appearance.applyTheme(value)
+    }
+
+    fun setLanguage(value: AppLanguage) = viewModelScope.launch {
+        repo.setLanguage(value)
+        Appearance.applyLanguage(value)
+    }
 }
