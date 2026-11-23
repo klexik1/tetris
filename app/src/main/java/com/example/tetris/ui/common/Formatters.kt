@@ -6,7 +6,7 @@ import java.util.Date
 import java.util.Locale
 
 object Formatters {
-    private val locale: Locale = Locale.forLanguageTag("ru-RU")
+    private val locale: Locale get() = Locale.getDefault()
 
     fun number(value: Int): String = NumberFormat.getIntegerInstance(locale).format(value)
 
